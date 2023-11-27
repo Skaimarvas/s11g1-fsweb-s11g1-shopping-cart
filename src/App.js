@@ -5,15 +5,11 @@ import { Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Products from "./components/Products";
 import ShoppingCart from "./components/ShoppingCart";
-import { ProductContextObject } from "./context/createContext";
 
 function App() {
-  const { products, setProducts, cart, setCart } =
-    useContext(ProductContextObject);
-
   return (
     <div className="App">
-      <Navigation cart={cart} />
+      <Navigation />
 
       {/* Routelar */}
       <main className="content">
@@ -22,7 +18,7 @@ function App() {
         </Route>
 
         <Route path="/cart">
-          <ShoppingCart cart={cart} />
+          <ShoppingCart />
         </Route>
       </main>
     </div>

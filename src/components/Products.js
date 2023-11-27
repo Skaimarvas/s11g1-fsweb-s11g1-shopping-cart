@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 // Components
 import Product from "./Product";
-import { ProductContextObject } from "../context/createContext";
+import { ProductContextObject } from "../context/ProductContext";
 
 const ScProducts = styled.section`
   display: grid;
