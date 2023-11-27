@@ -10,11 +10,11 @@ Bu talimatları dikkatlice okuyun. Bu projeye başlamadan önce tam olarak ne be
 
 ### Görev 1: Proje Kurulumu
 
-- [ ] Forklayın.
-- [ ] Klonlayın
-- [ ] Ana dizine gidin
-- [ ] `npm install`
-- [ ] `npm start`
+- [x] Forklayın.
+- [x] Klonlayın
+- [x] Ana dizine gidin
+- [x] `npm install`
+- [x] `npm start`
 
 ### Görev 2: Gereksinimler
 
@@ -28,15 +28,15 @@ Başlamadan önce, lütfen birkaç dakikanızı ayırın ve bu uygulamayı keşf
 
 **Adım 1 - Öğe işlevi ekle**
 
-- "App.js" içinde "addItem" adlı bir işlev vardır. Verilen ürünü alışveriş sepetine ekleyebilmek için bu fonksiyonu kullanın.
+[X] "App.js" içinde "addItem" adlı bir işlev vardır. Verilen ürünü alışveriş sepetine ekleyebilmek için bu fonksiyonu kullanın.
 
 **ADIM 2 - ProductContext Oluşturma**
 
-- `src` içinde, `contexts` adında yeni bir klasör oluşturun, bu klasör, oluşturduğumuz tüm `context nesne`leri tutmak için kullanılacaktır.
+[x] `src` içinde, `contexts` adında yeni bir klasör oluşturun, bu klasör, oluşturduğumuz tüm `context nesne`leri tutmak için kullanılacaktır.
 
-- Bu klasörün içinde "ProductContext.js" adlı yeni bir dosya oluşturun.
+[x] Bu klasörün içinde "ProductContext.js" adlı yeni bir dosya oluşturun.
 
-- Bu dosyada, react kitaplığından "createContext" işlevini import edin ve "ProductContext"imizi oluşturun.
+[x] Bu dosyada, react kitaplığından "createContext" işlevini import edin ve "ProductContext"imizi oluşturun.
 
 **ADIM 3 - ProductContext ile veri sağlama**
 
