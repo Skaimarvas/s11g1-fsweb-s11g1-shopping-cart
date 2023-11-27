@@ -142,6 +142,6 @@ Artık uygulamamızı başarılı bir şekilde "Context API" kullanımına dön�
 MVP'ye ulaşılana kadar esnek problemlere başlamayın.
 
 - Bir butona tıklayınca sepetinizden bir öğeyi kaldırmanıza izin veren bir 'removeItem' işlevi oluşturun. Bu "removeItem" işlevi, "ShoppingCartItem" bileşeninizden kullanılabilir olmalıdır.
-  Her öğenin bir 'id'si olduğunu unutmayın, bu, removeItem işlevinizi oluştururken çok yardımcı olacaktır!
+  Her öğenin bir 'id'si olduğunu unutmayın, bu, removeItem işlevinizi oluştururken çok yardımcı olacaktır! - TAMAMLANDI
 
-- `localStorage` Kullanarak Sepet Öğelerini Sürdürülebilir hale getirin. (Bunu denerseniz, ürünlerimizin alışveriş sepetini yenileyerek doldurmasını sağlamak biraz zor olacaktır. Verilerin gerçekte nerede depolandığını ve uygulama bir yenilemeden sonra yeniden yüklenirken localStorage'dan oraya nasıl veri alabileceğinizi düşünmeniz gerekecek. İyi şanslar!)
+- `localStorage` Kullanarak Sepet Öğelerini Sürdürülebilir hale getirin. (Bunu denerseniz, ürünlerimizin alışveriş sepetini yenileyerek doldurmasını sağlamak biraz zor olacaktır. Verilerin gerçekte nerede depolandığını ve uygulama bir yenilemeden sonra yeniden yüklenirken localStorage'dan oraya nasıl veri alabileceğinizi düşünmeniz gerekecek. İyi şanslar!) TAMAMLANDI
