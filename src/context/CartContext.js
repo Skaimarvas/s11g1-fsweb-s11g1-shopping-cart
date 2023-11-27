@@ -4,14 +4,19 @@ export const CartContextObject = createContext();
 
 const storage = JSON.parse(localStorage.getItem("cart"));
 
-export const CartContextProvider = ({ children, local = storage }) => {
-  const [cart, setCart] = useState([]);
+export const CartContextProvider = ({ children, deneme = storage }) => {
+  const [cart, setCart] = useState(deneme || []);
   const addItem = (item) => {
     // verilen itemi sepete ekleyin
-    setCart((prevProd) =>
-      !cart.includes(item) ? [...prevProd, item] : [...prevProd]
-    );
-    localStorage.setItem("cart", JSON.stringify(cart));
+
+    const isInclude = cart.some((prod) => prod.id === item.id);
+
+    console.log("ISINCLUDE", isInclude);
+
+    const addProduct = !isInclude ? [...cart, item] : [...cart];
+
+    setCart(addProduct);
+    localStorage.setItem("cart", JSON.stringify(addProduct));
   };
 
   const remItem = (id) => {
@@ -25,14 +30,6 @@ export const CartContextProvider = ({ children, local = storage }) => {
     addItem,
     remItem,
   };
-
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
-
-  //   useEffect(() => {
-  //     local && setCart(local);
-  //   }, []);
 
   return (
     <CartContextObject.Provider value={contextCartObject}>
